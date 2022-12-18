@@ -1,5 +1,8 @@
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
+
+from flask import Flask
+
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         s = self.path
